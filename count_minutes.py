@@ -21,7 +21,7 @@ def create_dict(filename):
                     doc_dic[row_activity] += row_time
                 else:
                     doc_dic[row_activity] = row_time
-                print(row_activity, ":", row_time)
+                #print(row_activity, ":", row_time)
             else:
                 raise NameError('Missing time or activity in the following line: ', line)
         return doc_dic;
@@ -32,4 +32,7 @@ if __name__ == "__main__":
     else:
         activity_histo = create_dict(sys.argv[1])
         print(activity_histo)
-        print(sum(activity_histo.values()))
+        total_minutes = sum(activity_histo.values())
+        minutes = total_minutes % 60
+        hours = int(total_minutes / 60)
+        print("Time passed:", hours, "hours and", minutes, "minutes")
