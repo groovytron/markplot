@@ -4,7 +4,7 @@ from itertools import tee
 
 def create_dict(filename):
     with open(filename) as f:
-        time_regex = re.compile(r"\| \d+")
+        time_regex = re.compile(r"\| \d+$")
         activity_regex = re.compile(r"^(?:Documentation|Test|Développement|Environnement de développement|Environnement de test|Étude de faisabilité)")
         row_time = None
         doc_dic = dict()
