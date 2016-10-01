@@ -35,4 +35,4 @@ if __name__ == "__main__":
         total_minutes = sum(activity_histo.values())
         minutes = total_minutes % 60
         hours = int(total_minutes / 60)
-        print("Time passed:", hours, "hours and", minutes, "minutes")
+        print("Time spent:", hours, "hours and", minutes, "minutes")
