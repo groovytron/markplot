@@ -6,5 +6,5 @@ install:
   - pip install .
 before_script:
   - flake8 markplot.py
-script:
-  - markplot journal-sample.md
+# script:
+#   - markplot journal-sample.md

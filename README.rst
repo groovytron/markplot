@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.org/groovytron/markplot.svg?branch=master
+    :target: https://travis-ci.org/groovytron/markplot
+
 Simple script capable of generating plots and csv files from a projects'
 journal files containing a :code:`Markdown` table. The journals must have
 the same format as the example `journal-sample.md <journal-sample.md>`_ file.
