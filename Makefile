@@ -1,4 +1,4 @@
-.PHONY: dist, upload
+.PHONY: dist, upload, clean
 
 dist:
 	python setup.py sdist
@@ -7,5 +7,7 @@ dist:
 upload: dist
 	twine upload dist/*
 
+clean:
+	rm -rf dist
 
 
