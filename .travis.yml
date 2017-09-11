@@ -4,7 +4,5 @@ python:
 install:
   - pip install flake8
   - pip install .
-before_script:
+script:
   - flake8 markplot.py
-# script:
-#   - markplot journal-sample.md
